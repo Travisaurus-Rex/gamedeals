@@ -37,7 +37,7 @@
   <style>
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: repeat(4, minmax(260px, 1fr));
       gap: 1.25rem;
     }
   
@@ -90,6 +90,13 @@
       font-size: 0.8rem;
       color: #4ade80;
       margin-top: 0.25rem;
+    }
+
+    @media screen and (max-width: 1120px) {
+      .grid {
+        grid-template-columns: repeat(3, minmax(260px, 1fr));
+        gap: 1.25rem;
+      }
     }
   </style>
   
